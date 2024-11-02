@@ -11,8 +11,8 @@ import key_param
 # Connect to MongoDB using URI stored in key_param file
 # The database name is "book_mongodb_chunks" and collection name is "chunked_data"
 client = MongoClient(key_param.MONGODB_URI)
-dbName = "book_mongodb_chunks"
-collectionName = "chunked_data"
+dbName = "rag_db"
+collectionName = "rag_db"
 collection = client[dbName][collectionName]
 
 # Load the PDF file and extract its pages for processing
